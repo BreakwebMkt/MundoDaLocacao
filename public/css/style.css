@@ -18,7 +18,7 @@
 
 .buttonStyle:hover, .home .home-desc input:hover, .about .about-desc input:hover, .menu .catagory input:hover, .popular .popular-content .p-card input:hover, .order .order-content .order-form button:hover {
   color: #ffffff;
-  background-color: #f7ca3e;
+  background-color: #FF6400;
 }
 
 .sectionHeading, .menu h2, .popular h2, .gallery h2, .order h2 {
@@ -32,7 +32,7 @@
 
 .sectionHeading span, .menu h2 span, .popular h2 span, .gallery h2 span, .order h2 span {
   padding: 0 1rem;
-  color: #f7ca3e;
+  color: #FF6400;
 }
 
 .footerTitle, .footer .contact-info h4, .footer .location h4, .footer .quick-links h4, .footer .follow-us h4 {
@@ -53,7 +53,7 @@
 }
 
 .footerLink:hover, .footer .location ul li a:hover, .footer .quick-links ul li a:hover, .footer .follow-us ul li a:hover {
-  color: #f7ca3e;
+  color: #FF6400;
 }
 
 * {
@@ -82,7 +82,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #f7ca3e;
+  background: #FF6400;
 }
 
 body {
@@ -192,8 +192,8 @@ section {
 }
 
 .header .navbar ul li a:hover, .header .navbar ul li a.active {
-  color: #f7ca3e;
-  border-bottom: 0.2rem solid #f7ca3e;
+  color: #FF6400;
+  border-bottom: 0.2rem solid #FF6400;
 }
 
 .header #menu-bar {
@@ -263,7 +263,7 @@ section {
   position: absolute;
   top: 0;
   right: -6rem;
-  background-color: #f7ca3e;
+  background-color: #FF6400;
   border-radius: 3rem;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
@@ -355,6 +355,29 @@ section {
   margin: 2rem 3rem;
 }
 
+.teste {
+  display: inline-flex;
+}
+
+.teste h2 {
+  text-align: center;
+  padding: 10px;
+}
+
+.teste1 {
+  width: 33%;
+  display: inline-block;
+  background-color: #FF6400;
+  border-radius: 10px;
+  margin: 1%;
+}
+
+.teste .teste1 p {
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 10px;
+}
+
 .menu {
   display: -ms-grid;
   display: grid;
@@ -400,7 +423,7 @@ section {
 
 .menu .catagory input.active {
   color: #ffffff;
-  background-color: #f7ca3e;
+  background-color: #FF6400;
 }
 
 .menu .catagory-img {
@@ -439,7 +462,7 @@ section {
 }
 
 .menu .menu-content .info h3 span {
-  color: #f7ca3e;
+  color: #FF6400;
   padding-right: 1rem;
 }
 
@@ -496,7 +519,7 @@ section {
   display: block;
   width: 100%;
   height: 100%;
-  border: 0.1rem solid #f7ca3e;
+  border: 0.1rem solid #FF6400;
 }
 
 .popular .popular-content .p-card h4 {
@@ -513,7 +536,7 @@ section {
 }
 
 .popular .popular-content .p-card .review i {
-  color: #f7ca3e;
+  color: #FF6400;
   font-size: 1.6rem;
 }
 
@@ -676,7 +699,7 @@ section {
   content: "\2714"; 
   position: absolute;
   left: 0; 
-  color: #003575; 
+  color: #000000; 
 }
 
 .order .order-content ul {
@@ -766,7 +789,7 @@ section {
 
 .footer .contact-info p i {
   font-size: 1.6rem;
-  color: #f7ca3e;
+  color: #FF6400;
 }
 
 .footer .contact-info p span {
@@ -826,6 +849,6 @@ section {
 }
 
 .footer .copyright p span {
-  color: #f7ca3e;
+  color: #FF6400;
   font-weight: 500;
 }

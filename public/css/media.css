@@ -1,6 +1,6 @@
 .buttonStyle {
   padding: 0.5rem 3rem;
-  border: 0.2rem solid #f7ca3e;
+  border: 0.2rem solid #FF6400;
   border-radius: 50rem;
   font-size: 2rem;
   color: #000000;
@@ -13,7 +13,7 @@
 
 .buttonStyle:hover {
   color: #ffffff;
-  background-color: #f7ca3e;
+  background-color: #FF6400;
 }
 
 .sectionHeading {
@@ -27,7 +27,7 @@
 
 .sectionHeading span {
   padding: 0 1rem;
-  color: #f7ca3e;
+  color: #FF6400;
 }
 
 .footerTitle {
@@ -48,7 +48,7 @@
 }
 
 .footerLink:hover {
-  color: #f7ca3e;
+  color: #FF6400;
 }
 
 @media screen and (max-width: 991px) {
@@ -161,7 +161,7 @@
   .header #menu-bar.active {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
-    color: #f7ca3e;
+    color: #FF6400;
   }
   .home .home-desc {
     grid-column: 1 / -1;
