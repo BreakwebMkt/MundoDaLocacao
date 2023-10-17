@@ -8,7 +8,7 @@
   font-size: 2rem;
   color: #000000;
   cursor: pointer;
-  text-transform: capitalize;
+  text-transform: none;
   background-color: transparent;
   -webkit-transition: all 0.4s linear;
   transition: all 0.4s linear;
@@ -24,7 +24,7 @@
   padding: 2rem;
   font-weight: 700;
   text-align: center;
-  text-transform: capitalize;
+  text-transform: none;
   color: #000000;
 }
 
@@ -38,14 +38,14 @@
   color: #ffffff;
   font-weight: 500;
   text-align: left;
-  text-transform: capitalize;
+  text-transform: none;
   padding: 1rem;
 }
 
 .footerLink, .footer .location ul li a, .footer .quick-links ul li a, .footer .follow-us ul li a {
   font-size: 1.4rem;
   color: #ffffff;
-  text-transform: capitalize;
+  text-transform: none;
   -webkit-transition: all 0.4s linear;
   transition: all 0.4s linear;
 }
@@ -183,7 +183,7 @@ section {
 
 .header .navbar ul li a {
   font-size: 2rem;
-  text-transform: capitalize;
+  text-transform: none;
   margin: 0 0.5rem;
   font-weight: 500;
   color: #000000;
@@ -230,7 +230,7 @@ section {
   padding: 1rem;
   font-size: 5rem;
   font-weight: 700;
-  text-transform: capitalize;
+  text-transform: none;
   text-align: center;
 }
 
@@ -239,7 +239,7 @@ section {
   padding: 1rem;
   font-size: 1.8rem;
   line-height: 1.5;
-  text-transform: capitalize;
+  text-transform: none;
   text-align: left;
 }
 
@@ -336,7 +336,7 @@ section {
   padding: 1rem;
   font-size: 4rem;
   font-weight: 700;
-  text-transform: capitalize;
+  text-transform: none;
   text-align: center;
 }
 
@@ -345,7 +345,7 @@ section {
   padding: 1rem;
   font-size: 1.6rem;
   line-height: 1.5;
-  text-transform: capitalize;
+  text-transform: none;
   text-align: left;
 }
 
@@ -476,7 +476,7 @@ section {
   font-size: 2.4rem;
   color: #000000;
   font-weight: bold;
-  text-transform: capitalize;
+  text-transform: none;
 }
 
 .menu .menu-content .info h3 span {
@@ -489,7 +489,7 @@ section {
   padding: 1rem;
   font-size: 1.6rem;
   line-height: 1.5;
-  text-transform: capitalize;
+  text-transform: none;
   text-align: left;
   padding: 0 4rem 0;
 }
@@ -543,7 +543,7 @@ section {
   padding: 1rem;
   font-size: 3rem;
   font-weight: 500;
-  text-transform: capitalize;
+  text-transform: none;
   text-align: center;
 }
 
@@ -627,7 +627,7 @@ section {
   padding: 1rem;
   font-size: 3rem;
   font-weight: 700;
-  text-transform: capitalize;
+  text-transform: none;
   text-align: center;
   color: #ffffff;
   opacity: 0.5;
@@ -762,7 +762,7 @@ section {
   padding-bottom: 10px;
   font-weight: 700;
   text-align: center;
-  text-transform: capitalize;
+  text-transform: none;
   color: #000000;
 }
 
@@ -781,7 +781,7 @@ iframe {
   font-size: 2rem;
   padding: 2rem;
   text-align: center;
-  text-transform: capitalize;
+  text-transform: none;
   color: black;
 }
 
@@ -829,7 +829,7 @@ iframe {
   font-size: 2rem;
   color: #000000;
   cursor: pointer;
-  text-transform: capitalize;
+  text-transform: none;
   background-color: transparent;
   -webkit-transition: all 0.4s linear;
   transition: all 0.4s linear;
