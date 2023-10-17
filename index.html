@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -43,10 +42,10 @@
             <a href="#about">SOBRE</a>
           </li>
           <li>
-            <a href="#menu">STANDS</a>
+            <a href="#color">STANDS</a>
           </li>
           <li>
-            <a href="#popular">BEST</a>
+            <a href="#popular">SUCESSOS</a>
           </li>
           <li>
             <a href="#gallery">ALBUM</a>
@@ -77,7 +76,6 @@
             e atendimento personalizado de suas
             necessidades.
           </p>
-          <input type="button" value="get started" />
         </div>
 
         <div class="home-image">
@@ -112,25 +110,25 @@
             com mais de 3000m², nossa empresa apresenta
             uma sólida estrutura. Contamos com uma equipe
             especializada em diversos ramos, incluindo projetos 3D,
-            elétricos, design, decoraçãoe outras áreas essenciais
+            elétricos, design, decoração e outras áreas essenciais
           </p>
-
-          <input type="button" value="learn more" />
         </div>
       </section>
 
-      <section id="teste" class="teste">
+      <section id="caixa" class="caixa">
 
-        <div class="teste1">
+        <div class="caixa1">
+          <img class="icon" src="images/mission.png" alt="Missão">
           <h2>MISSÃO</h2>
           <p>Construir a confiança sólida
             dos nossos clientes e do
             mercado por meio de
-            propos tas ori g inai s e
+            propostas originais e
             inovadoras.</p>
         </div>
 
-        <div class="teste1">
+        <div class="caixa1">
+          <img class="icon" src="images/eye.png" alt="Visão">
           <h2>VISÃO</h2>
           <p>Alcançar um crescimento sustentável
             e consolidado, oferecendo as melhores
@@ -141,7 +139,8 @@
             clientes quanto para nossos profissionais.</p>
         </div>
 
-        <div class="teste1">
+        <div class="caixa1">
+          <img class="icon" src="images/value.png" alt="Valores">
           <h2>VALORES</h2>
           <p>Nossos valores fundamentais são a
             busca incessante pela qualidade, a
@@ -153,66 +152,32 @@
       </section>
 
       <!-- ====markup about section==== -->
-      <section id="menu" class="menu">
-        <h2>Métodos <span>Construtivos</span></h2>
-        <div class="catagory">
-          <input type="button" value="Stand Padrão" />
-          <input type="button" class="active" value="Stand Misto"/>
-          <input type="button" value="Stand Construido" />
+      <section  id="color" class="color">
+        <div>
+          <h2>Métodos<span>Construtivos</span></h2>
+          <div class="options">
+            <button class="option" onclick="currentIndex = 0; updateContent();">Stand Padrão</button>
+            <button class="option" onclick="currentIndex = 1; updateContent();">Stand Misto</button>
+            <button class="option" onclick="currentIndex = 2; updateContent();">Stand Construído</button>
+          </div>
         </div>
-
-        <div class="catagory-img">
-          <img id="c-img" src="./images/clio-style.JPG" alt="Net Error" />
-        </div>
-
-        <!-- ---info content 01--- -->
-        <div class="menu-content">
-          <div class="info">
-            <h3><span>01.</span>we serve best food in the country</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore,
-              perspiciatis.
-            </p>
-          </div>
-
-          <!-- ---info content 02--- -->
-          <div class="info">
-            <h3><span>02.</span>we serve best food in the country</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore,
-              perspiciatis.
-            </p>
-          </div>
-
-          <!-- ---info content 03--- -->
-          <div class="info">
-            <h3><span>03.</span>we serve best food in the country</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore,
-              perspiciatis.
-            </p>
-          </div>
-
-          <!-- ---info content 04--- -->
-          <div class="info">
-            <h3><span>04.</span>we serve best food in the country</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore,
-              perspiciatis.
-            </p>
-          </div>
+        <div class="container">
+            <div id="interactive-block">
+                <img id="image" src="images/sindicalcadosjau.img.JPG" alt="Imagem 1">
+                <p id="text">Texto</p>
+            </div>
         </div>
       </section>
 
       <!-- ====markup popular section==== -->
       <section id="popular" class="popular">
-        <h2>CASES<span>DE</span>SUCESSO</h2>
+        <h2>CASES<span>DE</span>SUCESSOS</h2>
 
         <div class="popular-content">
           <!-- ---card 01--- -->
           <div class="p-card">
             <img src="./images/bom-years.JPG" alt="Net Error" />
-            <h4>SINDICATO RURAL</h4>
+            <h4>BOM YEARS</h4>
             <div class="review">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -307,71 +272,56 @@
       </section>
 
       <!-- ====markup gallery section==== -->
-      <section id="order" class="order">
-        <h2>Areas de<span>Atuação</span></h2>
+        <section id="order" class="order">
+          <h2>Areas de<span>Atuação</span></h2>
+  
+          <div class="order-content custom-list">
+            <ul>
+              <li>Montagem de Stands</li>
+              <li>Cenografia</li>
+              <li>Comunicação Visual</li>
+              <li>Congressos, Seminários e Convenções</li>
+              <li>Lançamentos de Produtos</li>
+              <li>Exposições e WorkShops</li>
+              <li>Eventos Empresariais</li>
+              <li>Eventos Temáticos</li>
+              <li>Cenários para Shows e Peças de Teatro</li>
+              <li>Desfiles de Palcos</li>
+              <li>ShowRoom e Lojas</li>
+              <li>Quiosques para Shoppings</li>
+            </ul>
+          </div>
+        </section>
+      </main>
 
-        <div class="order-content custom-list">
-          <ul>
-            <li>Montagem de Stands</li>
-            <li>Cenografia</li>
-            <li>Comunicação Visual</li>
-            <li>Congressos, Seminários e Convenções</li>
-            <li>Lançamentos de Produtos</li>
-            <li>Exposições e WorkShops</li>
-            <li>Eventos Empresariais</li>
-            <li>Eventos Temáticos</li>
-            <li>Cenários para Shows e Peças de Teatro</li>
-            <li>Desfiles de Palcos</li>
-            <li>ShowRoom e Lojas</li>
-            <li>Quiosques para Shoppings</li>
-          </ul>
-          <img src="./images/fantasias-rad.JPG" alt="Net Error" />
-        </div>
-      </section>
-    </main>
-
+    <footer>
+      <div>
+        <h4 class="loc">Localização</h4>
+        <div  class="iframe-container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.276869432958!2d-46.366880422930485!3d-23.486534958850818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce635372987411%3A0x32044ea47f6363e2!2sR.%20Itu%2C%20721%20-%20Vila%20Monte%20Belo%2C%20Itaquaquecetuba%20-%20SP%2C%2008577-740!5e0!3m2!1spt-BR!2sbr!4v1696272580079!5m2!1spt-BR!2sbr"allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </div>
+    </footer>
+    <br>
     <!-- ====markup footer element==== -->
     <footer class="footer">
-      <div class="contact-info">
-        <h4>INFO. DE CONTATO</h4>
-        
-        <p><i class="fas fa-envelope"></i> <span>contato@mundodalocacao.com</span></p>
-        <p><i class="fas fa-envelope"></i> <span>comercial@mundodalocacao.com</span></p>
-        <p><i class="fas fa-phone"></i> <span>(11) 97077-0550 - Silvio
-        </span></p>
-        <p><i class="fas fa-phone"></i> <span>(11) 98216-3697 - Odair</span></p>
-        <p><i class="fas fa-phone"></i> <span>(11) 4640-2462 - Fixo</span></p>
-      </div>
-
-      <div class="follow-us">
-        <h4>SIGA NOS</h4>
-        <ul>
-          <li>
-            <a href="https://www.facebook.com/muhammadsahosskhan/" target="blank">FACEBOOK</a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/muhammadsahosskhan/" target="blank">INSTAGRAM</a>
-          </li>
-          <li><a href=" https://twitter.com/Sahosskhan" target="blank">TWITTER</a></li>
-          <li>
-            <a href="https://www.linkedin.com/in/muhammad-sahoss-khan-a8013a233/" target="blank">LINKEDIN</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="location">
-        <h4>BRANCH LOCATION</h4>
-        <ul>
-          <li><a href="#">DHAKA</a></li>
-          <li><a href="#">KUSHTIA</a></li>
-          <li><a href="#">KHULNA</a></li>
-          <li><a href="#">CHITTAGONG</a></li>
-        </ul>
-      </div>
-
-      <div class="copyright">
-        <a href="https://www.facebook.com/muhammadsahosskhan/"><p>Copyright 2022 || &copy all right reserved By  MUHAMMAD SAHOSS KHAN</p></a>
-      </div>
+      
+      <div class="redes-sociais">
+        <a href="https://www.facebook.com/suaempresa" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/suaempresa" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div class="contato">
+        <p>Telefone: (11) 97077-0550 - Silvio</p>
+        <p>Telefone: (11) 98216-3697 - Odair</p>
+        <p>Telefone: (11) 4640-2462 - Fixo</p>
+    </div>
+    <div class="contato">
+      <p>E-mail: contato@mundodalocacao.com</p>
+      <p>E-mail: comercial@mundodalocacao.com</p>
+    </div>
+    <div class="horarios">
+        <p>Horário de Funcionamento:</p>
+        <p>Segunda a Sexta: 9:00 - 18:00</p>
+        <p>Sábado: 10:00 - 14:00</p>
+    </div>
     </footer>
 
     <!-- ----linked main.js file---- -->

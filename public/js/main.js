@@ -1,70 +1,30 @@
-//   --﷽--
+const image = document.getElementById('image');
+const text = document.getElementById('text');
+let currentIndex = 0;
 
-// selecting all necessary dom element
+const textList = [
+    { imageSrc: 'images/sindicalcadosjau.img.JPG', textContent: 'Confeccionados com materiais padrões (Octanorm) ou vidro, o Stand do tipo Padrão, traz ao nosso cliente a possibilidade de trabalhar em uma feira ou evento de forma simples e eficaz.' },
+    { imageSrc: 'images/phanter.JPG', textContent: 'Possui uma combinação de elementos construídos e padrões, apresentando versatilidade em sua criação, agilidade na sua montagem e personalização conforme a necessidade do cliente.' },
+    { imageSrc: 'images/lpc-latina.JPG', textContent: 'Com seus formatos, materiais e cores, cada estrutura é cuidadosamente projetada para ser única e sob medida para o evento em questão, garantindo a certeza de uma presença marcante e memorável.' },
+];
 
-//select for menu
-const menuBar = document.querySelector("#menu-bar");
-const navbar = document.querySelector(".navbar");
+function updateContent() {
+    const currentText = textList[currentIndex];
+    image.src = currentText.imageSrc;
+    text.textContent = currentText.textContent;
+}
 
-//select for menu image
-const catagory = document.querySelectorAll(".catagory input");
-const cataImg = document.querySelector("#c-img");
+const buttons = document.querySelectorAll('.option');
 
-// select for connect section with nav item
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll(".navbar ul li a");
-
-// event listener for toggle menu
-menuBar.addEventListener("click", () => {
-  menuBar.classList.toggle("fa-times");
-  menuBar.classList.toggle("active");
-  navbar.classList.toggle("active");
-});
-
-// scroll event
-document.addEventListener("scroll", () => {
-  menuBar.classList.remove("fa-times");
-  menuBar.classList.remove("active");
-  navbar.classList.remove("active");
-
-  // conect With nav link
-  connectSecWithNavLink();
-});
-
-// controlling menu image
-catagory.forEach((element) => {
-  element.addEventListener("click", () => {
-    catagory.forEach((ele) => {
-      ele.classList.remove("active");
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    buttons.forEach(otherButton => {
+      if (otherButton !== button) {
+        otherButton.classList.remove('clicked');
+      }
     });
-
-    let values = element.value;
-    element.classList.add("active");
-    cataImg.src = `./images/menu-${values}.jpg`;
+    button.classList.add('clicked');
   });
 });
 
-// handeling scroll event and mar nav item
-const connectSecWithNavLink = () => {
-  let current = "";
-
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop;
-
-    if (pageYOffset >= sectionTop - 60) {
-      current = section.getAttribute("id");
-    }
-  });
-
-  navLinks.forEach((link) => {
-    let linkAttribute = link.attributes.href.value;
-    link.classList.remove("active");
-
-    if (linkAttribute === `#${current}`) {
-      link.classList.add("active");
-    }
-  });
-};
-
-// happy coding!!!!
-// this project made by Fahad at 27th April, 2022.
+updateContent();
