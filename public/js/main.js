@@ -3,9 +3,9 @@ const text = document.getElementById('text');
 let currentIndex = 0;
 
 const textList = [
-    { imageSrc: 'images/sindicalcadosjau.img.JPG', textContent: 'Confeccionados com materiais padrões (Octanorm) ou vidro, o Stand do tipo Padrão, traz ao nosso cliente a possibilidade de trabalhar em uma feira ou evento de forma simples e eficaz.' },
-    { imageSrc: 'images/phanter.JPG', textContent: 'Possui uma combinação de elementos construídos e padrões, apresentando versatilidade em sua criação, agilidade na sua montagem e personalização conforme a necessidade do cliente.' },
-    { imageSrc: 'images/lpc-latina.JPG', textContent: 'Com seus formatos, materiais e cores, cada estrutura é cuidadosamente projetada para ser única e sob medida para o evento em questão, garantindo a certeza de uma presença marcante e memorável.' },
+    { imageSrc: 'images/ng-gas.JPG', textContent: 'Confeccionados com materiais padrões (Octanorm) ou vidro, o Stand do tipo Padrão, traz ao nosso cliente a possibilidade de trabalhar em uma feira ou evento de forma simples e eficaz.' },
+    { imageSrc: 'images/web-spot.JPG', textContent: 'Possui uma combinação de elementos construídos e padrões, apresentando versatilidade em sua criação, agilidade na sua montagem e personalização conforme a necessidade do cliente.' },
+    { imageSrc: 'images/viraj.JPG', textContent: 'Com seus formatos, materiais e cores, cada estrutura é cuidadosamente projetada para ser única e sob medida para o evento em questão, garantindo a certeza de uma presença marcante e memorável.' },
 ];
 
 function updateContent() {
@@ -28,3 +28,4 @@ buttons.forEach(button => {
 });
 
 updateContent();
+
