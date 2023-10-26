@@ -153,26 +153,47 @@
       </section>
 
       <!-- ====markup about section==== -->
-      <section  id="color" class="color">
+      <section id="color" class="color">
         <div>
           <h2>Métodos<span>Construtivos</span></h2>
           <div class="options">
-            <button class="option" onclick="currentIndex = 0; updateContent();">Stand Padrão</button>
-            <button class="option" onclick="currentIndex = 1; updateContent();">Stand Misto</button>
-            <button class="option" onclick="currentIndex = 2; updateContent();">Stand Construído</button>
+            <button class="option-button" data-option="standPadrao">Padrão</button>
+            <button class="option-button" data-option="standMisto">Misto</button>
+            <button class="option-button" data-option="standConstruido"> Construído</button>
           </div>
-        </div>
-        <div class="container">
-            <div id="interactive-block">
-                <img id="image" src="images/sindicalcadosjau.img.JPG" alt="Imagem 1">
-                <p id="text">Texto</p>
+          <div class="option" id="standPadrao">
+            <div class="option-box">
+              <div class="option-content">
+                <h2>Stand Padrão</h2>
+                <p>Confeccionados com materiais padrões (Octanorm) ou vidro, o Stand do tipo Padrão, traz ao nosso cliente a possibilidade de trabalhar em uma feira ou evento de forma simples e eficaz.</p>
+              </div>
+              <img src="images/ng-gas.JPG" alt="Imagem 1">
             </div>
+          </div>
+          <div class="option" id="standMisto">
+            <div class="option-box">
+              <div class="option-content">
+                <h2>Stand Misto</h2>
+                <p>Possui uma combinação de elementos construídos e padrões, apresentando versatilidade em sua criação, agilidade na sua montagem e personalização conforme a necessidade do cliente.</p>
+              </div>
+              <img src="images/web-spot.JPG" alt="Imagem 2">
+            </div>
+          </div>
+          <div class="option" id="standConstruido">
+            <div class="option-box">
+              <div class="option-content">
+                <h2>Stand Construído</h2>
+                <p>Com seus formatos, materiais e cores, cada estrutura é cuidadosamente projetada para ser única e sob medida para o evento em questão, garantindo a certeza de uma presença marcante e memorável.</p>
+              </div>
+              <img src="images/viraj.JPG" alt="Imagem 3">
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- ====markup popular section==== -->
       <section id="popular" class="popular">
-        <h2>CASES<span>DE</span>SUCESSOS</h2>
+        <h2>Cases<span>De</span>Sucessos</h2>
 
         <div class="popular-content">
           <!-- ---card 01--- -->

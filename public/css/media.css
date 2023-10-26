@@ -115,6 +115,7 @@
     margin-bottom: 30px;
   }
 }
+  
   @media (max-width: 768px) {
     #caixa .caixa1 {
       margin-right: 0;
@@ -298,5 +299,24 @@
 @media (max-width: 600px) {
   .footer-column {
       width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .option-button {
+    font-size: 1.8rem;
+  }
+
+  .option img {
+    max-width: 100%;
+    max-height: 17vh;
+  }
+
+  .option h2 {
+    font-size: 1.8rem;
+  }
+
+  .option p {
+    font-size: 1.6rem;
+    padding-right: 10px;
   }
 }
