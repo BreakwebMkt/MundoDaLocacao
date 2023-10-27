@@ -15,3 +15,29 @@ optionButtons.forEach(button => {
     document.getElementById(selectedOption).style.display = 'none';
   });
 });
+
+const header = document.querySelector('.header');
+let isHeaderVisible = true;
+let lastScrollPosition = window.scrollY;
+
+function showHeader() {
+  header.classList.remove('header-hidden');
+  isHeaderVisible = true;
+}
+
+function hideHeader() {
+  header.classList.add('header-hidden');
+  isHeaderVisible = false;
+}
+
+window.addEventListener('scroll', () => {
+  const currentScrollPosition = window.scrollY;
+  
+  if (currentScrollPosition > lastScrollPosition) {
+    hideHeader();
+  } else {
+    showHeader();
+  }
+
+  lastScrollPosition = currentScrollPosition;
+});

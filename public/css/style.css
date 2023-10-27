@@ -203,6 +203,23 @@ section {
   display: none;
 }
 
+.header {
+  transition: opacity 0.3s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6rem;
+  background-color: white;
+  opacity: 1;
+  z-index: 100;
+  margin: 0 auto;
+}
+
+.header-hidden {
+  opacity: 0;
+}
+
 .home {
   margin: 6rem 0;
   display: -ms-grid;
@@ -690,7 +707,7 @@ section {
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)), url(/images/lpc-latina.jpg);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)), url(./../../images/lpc-latina.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -754,7 +771,7 @@ footer::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(/images/Samtronicfooter.JPG) no-repeat center center;
+  background: url(./../../images/Samtronicfooter.JPG) no-repeat center center;
   background-size: cover;
 }
 
@@ -959,7 +976,7 @@ iframe {
   margin: 15px;
   display: flex;
   align-items: center;
-  background: url(/images/fundo-3.avif);
+  background: url(./../../images/fundo-3.avif);
   background-size: cover;
 }
 
