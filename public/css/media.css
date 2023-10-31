@@ -312,11 +312,16 @@
   }
 
   .option h2 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .option p {
     font-size: 1.6rem;
     padding-right: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .custom-list li {
+    font-size: 1.6rem;
   }
 }

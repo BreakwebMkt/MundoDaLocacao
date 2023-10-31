@@ -4,15 +4,16 @@ const options = document.querySelectorAll('.option');
 options.forEach(option => option.style.display = 'none');
 
 optionButtons.forEach(button => {
-  button.addEventListener('mouseover', () => {
+  button.addEventListener('click', () => {
     const selectedOption = button.getAttribute('data-option');
-    options.forEach(option => option.style.display = 'none');
-    document.getElementById(selectedOption).style.display = 'block';
-  });
-
-  button.addEventListener('mouseout', () => {
-    const selectedOption = button.getAttribute('data-option');
-    document.getElementById(selectedOption).style.display = 'none';
+    const selectedOptionElement = document.getElementById(selectedOption);
+    
+    if (selectedOptionElement.style.display === 'block') {
+      selectedOptionElement.style.display = 'none';
+    } else {
+      options.forEach(option => option.style.display = 'none');
+      selectedOptionElement.style.display = 'block';
+    }
   });
 });
 

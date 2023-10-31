@@ -256,7 +256,7 @@ section {
 .home .home-desc p {
   color: #333333;
   padding: 1rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 1.5;
   text-transform: none;
   text-align: left;
@@ -724,7 +724,7 @@ section {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 20px;
+  font-size: 1.8rem;
 }
 
 .custom-list li::before {
@@ -816,7 +816,7 @@ footer::after {
 }
 
 .footer-column ul li a {
-  font-size: 16px;
+  font-size: 1.6rem;
   color: white;
   text-decoration: none;
   font-weight: 300;
@@ -976,8 +976,6 @@ iframe {
   margin: 15px;
   display: flex;
   align-items: center;
-  background: url(./../../images/fundo-3.avif);
-  background-size: cover;
 }
 
 .option img {
