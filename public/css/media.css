@@ -136,7 +136,7 @@
   .header .navbar {
     padding: 2rem 0;
     display: block;
-    width: 40%;
+    width: 100%;
     height: calc(100vh - 6rem);
     background-color: white;
     position: absolute;
@@ -145,13 +145,14 @@
     z-index: 100;
     border-bottom-left-radius: 50%;
     -webkit-box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.2);
-            box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.2);
     -webkit-transition: all 0.4s linear;
     transition: all 0.5s linear;
   }
   .header .navbar.active {
     right: 0;
     max-width: 200px;
+    width: 200px;
   }
   .header .navbar ul {
     margin-top: 3rem;
@@ -291,40 +292,26 @@
     font-size: 1.8rem;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .footer-column {
-      width: 50%;
-      margin-bottom: 30px;
-      font-weight: bolder;
+    width: 50%;
+    margin-bottom: 30px;
+    font-weight: bolder;
   }
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-column ul li {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
 }
 @media (max-width: 600px) {
   .footer-column {
-      width: 100%;
-      font-weight: bolder;
-  }
-}
-@media (max-width: 768px) {
-  .option-button {
-    font-size: 1.8rem;
-  }
-
-  .option-box {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .option img {
-    margin-bottom: 10px;
-  }
-
-  .option h2 {
-    font-size: 3.5rem;
-  }
-
-  .option p {
-    font-size: 1.6rem;
-    padding-right: 10px;
+    width: 100%;
+    font-weight: bolder;
   }
 }
 

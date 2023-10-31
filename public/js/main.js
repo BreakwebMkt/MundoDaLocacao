@@ -45,7 +45,19 @@ window.addEventListener('scroll', () => {
 
 const menuIcon = document.getElementById('menu-bar');
 const navbar = document.querySelector('.navbar');
+const menuItems = document.querySelectorAll('.navbar ul li a');
+
+function closeMenu() {
+  navbar.classList.remove('active');
+}
 
 menuIcon.addEventListener('click', () => {
   navbar.classList.toggle('active');
 });
+
+menuItems.forEach(item => {
+  item.addEventListener('click', () => {
+    closeMenu();
+  });
+});
+
