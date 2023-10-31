@@ -138,7 +138,7 @@
     display: block;
     width: 40%;
     height: calc(100vh - 6rem);
-    background-color: #f0f8ff;
+    background-color: white;
     position: absolute;
     top: 6rem;
     right: -100%;
@@ -147,10 +147,11 @@
     -webkit-box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.2);
             box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.2);
     -webkit-transition: all 0.4s linear;
-    transition: all 0.4s linear;
+    transition: all 0.5s linear;
   }
   .header .navbar.active {
     right: 0;
+    max-width: 200px;
   }
   .header .navbar ul {
     margin-top: 3rem;
@@ -294,11 +295,13 @@
   .footer-column {
       width: 50%;
       margin-bottom: 30px;
+      font-weight: bolder;
   }
 }
 @media (max-width: 600px) {
   .footer-column {
       width: 100%;
+      font-weight: bolder;
   }
 }
 @media (max-width: 768px) {

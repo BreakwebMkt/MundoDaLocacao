@@ -42,3 +42,10 @@ window.addEventListener('scroll', () => {
 
   lastScrollPosition = currentScrollPosition;
 });
+
+const menuIcon = document.getElementById('menu-bar');
+const navbar = document.querySelector('.navbar');
+
+menuIcon.addEventListener('click', () => {
+  navbar.classList.toggle('active');
+});
