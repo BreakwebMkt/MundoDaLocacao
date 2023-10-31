@@ -204,7 +204,7 @@ section {
 }
 
 .header {
-  transition: opacity 0.3s;
+  transition: opacity 0.6s;
   position: fixed;
   top: 0;
   left: 0;
@@ -817,7 +817,7 @@ footer::after {
 
 .footer-column ul li a {
   font-size: 1.6rem;
-  color: white;
+  color: black;
   text-decoration: none;
   font-weight: 300;
   display: block;
@@ -825,7 +825,7 @@ footer::after {
 }
 
 .footer-column ul li a:hover {
-  color: #cecdcd;
+  color: black;
   padding-left: 10px;
 }
 
@@ -867,7 +867,7 @@ footer::after {
 }
 
 .footer-column .form-sub input::placeholder {
-  color: white;
+  color: black;
 }
 
 .footer-column .form-sub button {
@@ -878,7 +878,7 @@ footer::after {
   outline: none;
   border: none;
   cursor: pointer;
-  color: #f2f2f5;
+  color: black;
   border-radius: 3px;
   font-weight: bold;
   background-color: white;
