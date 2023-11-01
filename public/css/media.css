@@ -291,6 +291,34 @@
   .option {
     font-size: 1.8rem;
   }
+  
+  .option-box {
+    flex-direction: column;
+  }
+
+  .option img {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    order: 2;
+  }
+
+  .option-content {
+    order: 1;
+  }
+  
+  .option h2 {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .option p {
+    text-align: center;
+    margin: 0px;
+    padding-bottom: 10px;
+    padding: 5px;
+  }
 }
 @media (max-width: 768px) {
   .footer-column {
@@ -306,12 +334,14 @@
   .footer-column ul li {
     font-weight: bold;
     font-size: 1.8rem;
+    color: black;
 }
 }
 @media (max-width: 600px) {
   .footer-column {
     width: 100%;
     font-weight: bolder;
+    color: black;
   }
 }
 
