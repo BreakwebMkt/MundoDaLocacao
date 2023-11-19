@@ -61,3 +61,64 @@ menuItems.forEach(item => {
   });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+  var cards = document.querySelectorAll('.g-card');
+  var lightbox = document.getElementById('lightbox');
+  var lightboxImage = document.getElementById('lightbox-image');
+  var lightboxPrev = document.getElementById('lightbox-prev');
+  var lightboxNext = document.getElementById('lightbox-next');
+  var currentIndex;
+
+  lightboxPrev.addEventListener('click', function () {
+    navigate(-1);
+  });
+
+  lightboxNext.addEventListener('click', function () {
+    navigate(1);
+  });
+
+  window.openLightbox = function (index) {
+    currentIndex = index;
+    showImage();
+  };
+
+  function navigate(direction) {
+    currentIndex += direction;
+
+    if (currentIndex < 0) {
+      currentIndex = cards.length - 1;
+    } else if (currentIndex >= cards.length) {
+      currentIndex = 0;
+    }
+
+    showImage();
+  }
+
+  function showImage() {
+    var img = cards[currentIndex].querySelector('img');
+    lightboxImage.src = img.src;
+    lightbox.style.display = 'flex';
+
+    lightboxPrev.style.display = 'block';
+    lightboxNext.style.display = 'block';
+  }
+
+  lightbox.addEventListener('click', function (event) {
+    if (event.target === this) {
+      lightbox.style.display = 'none';
+    }
+  });
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+      lightbox.style.display = 'none';
+    }
+  });
+
+  cards.forEach(function (card) {
+    card.addEventListener('click', function () {
+      openLightbox(Array.from(cards).indexOf(card));
+    });
+  });
+});
+

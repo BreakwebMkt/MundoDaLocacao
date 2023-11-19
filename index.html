@@ -20,11 +20,15 @@
       referrerpolicy="no-referrer"
     />
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="./public/css/style.css" />
 
     <link rel="stylesheet" href="./public/css/media.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
   <body>
 
@@ -253,45 +257,55 @@
       <!-- ====markup gallery section==== -->
       <section id="gallery" class="gallery">
         <h2>Album<span>Locação</span></h2>
-
+    
         <div class="gallery-content">
           <!-- ---gallery card 01--- -->
           <div class="g-card">
-            <img src="./images/clio-style.JPG" alt="Net Error" />
+            <img src="./images/clio-style.JPG" alt="Net Error" onclick="openLightbox(0)" />
             <h3>Clio Style</h3>
           </div>
-
+    
           <!-- ---gallery card 02--- -->
           <div class="g-card">
-            <img src="./images/sindicalcadosjau.img.JPG" alt="Net Error" />
+            <img src="./images/footer.JPG" alt="Net Error" onclick="openLightbox(1)" />
             <h3>Sindi Calçados jaú</h3>
           </div>
-
+    
           <!-- ---gallery card 03--- -->
           <div class="g-card">
-            <img src="./images/we-make-design.JPG" alt="Net Error" />
+            <img src="./images/we-make-design.JPG" alt="Net Error" onclick="openLightbox(2)" />
             <h3>We Make Design</h3>
           </div>
-
+    
           <!-- ---gallery card 04--- -->
           <div class="g-card">
-            <img src="./images/bom-years.JPG" alt="Net Error" />
+            <img src="./images/chef-line.JPG" alt="Net Error" onclick="openLightbox(3)" />
             <h3>Bom Years</h3>
           </div>
-
+    
           <!-- ---gallery card 05--- -->
           <div class="g-card">
-            <img src="./images/office-brand.JPG" alt="Net Error" />
+            <img src="./images/office-brand.JPG" alt="Net Error" onclick="openLightbox(4)" />
             <h3>Office Brand</h3>
           </div>
-
+    
           <!-- ---gallery card 06--- -->
           <div class="g-card">
-            <img src="./images/lpc-latina.jpg" alt="Net Error" />
+            <img src="./images/fantasias-rad.JPG" alt="Net Error" onclick="openLightbox(5)" />
             <h3>LPC Latina</h3>
           </div>
         </div>
       </section>
+    
+      <div id="lightbox">
+        <button id="lightbox-prev" onclick="navigate(-1)">
+          <img src="images/esquerda.png" alt="Anterior">
+        </button>
+        <img id="lightbox-image" src="" alt="Imagem em destaque">
+        <button id="lightbox-next" onclick="navigate(1)">
+          <img src="images/direita.png" alt="Próxima">
+        </button>
+      </div>
 
       <!-- ====markup gallery section==== -->
         <section class="color">

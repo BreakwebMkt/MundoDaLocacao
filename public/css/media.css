@@ -232,6 +232,28 @@
   .gallery .gallery-content .g-card:nth-child(n) {
     grid-column: 1 / -1;
   }
+
+  #lightbox-prev,
+  #lightbox-next {
+  display: block;
+  position: absolute;
+  top: 50%;
+  background: rgba(255, 255, 255, 0.466);
+  padding: 1px;
+  cursor: pointer;
+  font-size: 1.2em;
+  color: #000;
+  border: none;
+}
+
+#lightbox-prev {
+  left: 10px;
+}
+
+#lightbox-next {
+  right: 10px;
+}
+}
   .order .order-content {
     grid-column: 1 / -1;
   }
