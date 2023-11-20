@@ -782,7 +782,6 @@ section {
   position: relative;
   padding: 50px;
   background: rgba(255, 255, 255, 0.349);
-  z-index: -1;
 }
 
 
@@ -803,9 +802,8 @@ footer::after {
   height: 100%;
   background: url(./../../images/Samtronicfooter.JPG) no-repeat center center;
   background-size: cover;
-  z-index: -1; /* ou tente um valor mais baixo do que o z-index do conteúdo */
+  z-index: -1;
 }
-
 
 .footer-first {
   max-width: 1400px;
